@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Фон адаптивной иконки (Android 8+): тот же сине-бирюзовый градиент, что
+     и в самом логотипе — виден в узкой кайме вокруг переднего плана, когда
+     лаунчер обрезает иконку под круг/сквиркл/другую форму маски. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:angle="135"
+        android:startColor="#0570B3"
+        android:endColor="#023380" />
+</shape>

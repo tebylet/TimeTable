@@ -1,0 +1,28 @@
+name: ymtimetable
+description: "Para — расписание занятий (Android/iOS). Разработчик: YM."
+publish_to: "none"
+version: 1.4.1+10
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^1.2.2
+  shared_preferences: ^2.3.3
+  package_info_plus: ^8.0.2
+  crypto: ^3.0.6
+  in_app_update: ^4.2.3
+  url_launcher: ^6.3.1
+  flutter_local_notifications: ^18.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

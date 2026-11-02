@@ -1,0 +1,33 @@
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+.idea/
+
+# Платформенные папки создаются командой `flutter create .`
+# и не входят в этот репозиторий вручную — но после генерации
+# их обычно уже коммитят как есть, кроме сборочных артефактов ниже.
+android/.gradle/
+android/.kotlin/
+android/local.properties
+android/**/build/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Ключ подписи релизной сборки и пароли к нему — НЕ должны попадать в
+# репозиторий/куда-либо ещё, кроме этого компьютера. Если потерять этот
+# файл/пароль, приложение больше нельзя будет обновить (см. предупреждение
+# в чате про подпись приложения).
+android/key.properties
+android/app/*.jks
+android/app/*.keystore
+
+# Generated delivery packages and release diagnostics (retain local copies).
+*.apk
+*.aab
+release-symbols/
+*.log

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adaptive icon (Android 8.0+): управляет тем, как система маскирует иконку
+     (круг/сквиркл/капля и т.д. — зависит от лаунчера), не давая логотипу
+     выглядеть мельче, чем нужно, как это было с обычной (legacy) иконкой. -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+</adaptive-icon>
