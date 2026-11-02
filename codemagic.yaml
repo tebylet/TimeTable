@@ -1,7 +1,7 @@
 
 workflows:
   ios-build:
-    name: PARA iOS Build
+    name: PARA iOS Release
     instance_type: mac_mini_m2
     max_build_duration: 60
 
@@ -14,9 +14,16 @@ workflows:
       - name: Install dependencies
         script: flutter pub get
 
-      - name: Build iOS without signing
-        script: flutter build ios --debug --no-codesign
+      - name: Build iOS Release
+        script: flutter build ios --release --no-codesign
+
+      - name: Package unsigned IPA
+        script: |
+          mkdir -p build/ios/ipa/Payload
+          cp -R build/ios/iphoneos/Runner.app build/ios/ipa/Payload/
+          cd build/ios/ipa
+          zip -qry PARA-unsigned.ipa Payload
 
     artifacts:
-      - build/ios/iphoneos/**/*.app
+      - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
